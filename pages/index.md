@@ -17,8 +17,8 @@ Founder - [NishantIyer](https://nishant.netlify.app)
 
 Featured
 
-- [DRATP]('https://portena.netlify.app/posts/dratp') (Dynamic Resource Allocation and Task Prioritization)
-- [Miracle]('https://portena.netlify.app/posts/help')
-- [Prototyping]('https://portena.netlify.app/posts/prototyping')
-- [Testbed]('https://portena.netlify.app/posts/testing%20pvpc')
+- [DRATP](https://portena.netlify.app/posts/dratp) (Dynamic Resource Allocation and Task Prioritization)
+- [Miracle](https://portena.netlify.app/posts/help)
+- [Prototyping](https://portena.netlify.app/posts/prototyping)
+- [Testbed](https://portena.netlify.app/posts/testing%20pvpc)
 
