@@ -12,7 +12,7 @@
         <router-link to="/posts" title="Blog" class="nav-link">
           <span class="nav-text">Blog</span>
         </router-link>
-        <router-link to="/academia" title="Academia" class="nav-link">
+        <router-link to="/academia" title="About" class="nav-link">
           <span class="nav-text">About</span>
         </router-link>
       </div>
@@ -22,7 +22,7 @@
             <i class="i-uil-github-alt"></i>
           </span>
         </a>
-        <a href="https://nishantiyer.netlify.app" target="_blank" title="Pictures" class="nav-link">
+        <a href="https://nishantiyer.netlify.app" target="_blank" title="Nishant" class="nav-link">
           <span class="nav-icon">
             <i class="i-iconoir:developer"></i>
           </span>
