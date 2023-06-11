@@ -9,9 +9,9 @@ plum: true
 
 Portena is an aspiring to be startup which has the potential to change the way we think about computers.
 
-Read - [About](https://portena.netlify.app) to learn more.
+Read - [About](https://portena.netlify.app/about) to learn more.
 
-Go to - [Blog](https://portena.netlify.app) to see the latest updates
+Go to - [Blog](https://portena.netlify.app/posts) to see the latest updates
 
 Founder - [NishantIyer](https://nishant.netlify.app)
 
