@@ -12,7 +12,7 @@
         <router-link to="/posts" title="Blog" class="nav-link">
           <span class="nav-text">Blog</span>
         </router-link>
-        <router-link to="/academia" title="About" class="nav-link">
+        <router-link to="/about" title="About" class="nav-link">
           <span class="nav-text">About</span>
         </router-link>
       </div>
