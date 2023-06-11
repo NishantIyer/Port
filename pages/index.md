@@ -13,7 +13,7 @@ Read - [About](https://portena.netlify.app/about) to learn more.
 
 Go to - [Blog](https://portena.netlify.app/posts) to see the latest updates
 
-Founder - [NishantIyer](https://nishant.netlify.app)
+Founder - [NishantIyer](https://nishantiyer.netlify.app)
 
 Featured
 
