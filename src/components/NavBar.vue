@@ -4,13 +4,13 @@
       <div class="left">
         <router-link to="/" title="Home" class="nav-link">
           <span class="nav-icon">
-            <i class="i-healthicons:p-outline" width="80" height="70"></i>
+            <i class="i-healthicons:alert-triangle-outline" width="80" height="70"></i>
           </span>
         </router-link>
       </div>
       <div class="center">
         <router-link to="/netlife" title="Blog" class="nav-link">
-          <span class="nav-text">Netowrk Toplogy</span>
+          <span class="nav-text">Network Toplogy</span>
         </router-link>
         <router-link to="/about" title="about" class="nav-link">
           <span class="nav-text">About</span>
@@ -23,6 +23,9 @@
         </router-link>
         <router-link to="/intrusiondetection" title="IDS" class="nav-link">
           <span class="nav-text">Intrusions</span>
+        </router-link>
+        <router-link to="/ap" title="Rogue AP" class="nav-link">
+          <span class="nav-text">Rogue Access Points</span>
         </router-link>
       </div>
       <div class="right">
