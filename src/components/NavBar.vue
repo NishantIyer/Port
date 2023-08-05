@@ -9,11 +9,20 @@
         </router-link>
       </div>
       <div class="center">
-        <router-link to="/posts" title="Blog" class="nav-link">
-          <span class="nav-text">Blog</span>
+        <router-link to="/net" title="Blog" class="nav-link">
+          <span class="nav-text">Netowrk Toplogy</span>
         </router-link>
-        <router-link to="/about" title="About" class="nav-link">
+        <router-link to="/about" title="about" class="nav-link">
           <span class="nav-text">About</span>
+        </router-link>
+        <router-link to="/dashi" title="Academia" class="nav-link">
+          <span class="nav-text">Dashboard</span>
+        </router-link>
+        <router-link to="/wifi" title="Scan" class="nav-link">
+          <span class="nav-text">Scan</span>
+        </router-link>
+        <router-link to="/intrusiondetection" title="IDS" class="nav-link">
+          <span class="nav-text">Intrusions</span>
         </router-link>
       </div>
       <div class="right">
@@ -22,7 +31,7 @@
             <i class="i-uil-github-alt"></i>
           </span>
         </a>
-        <a href="https://nishantiyer.netlify.app" target="_blank" title="Nishant" class="nav-link">
+        <a href="https://nishantiyer.netlify.app" target="_blank" title="Pictures" class="nav-link">
           <span class="nav-icon">
             <i class="i-iconoir:developer"></i>
           </span>
