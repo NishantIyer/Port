@@ -1,21 +1,142 @@
 ---
-title: About
-description: About Portena
+title: UTM
+description: About UTM
 image: https://cdn.discordapp.com/attachments/971299427715272734/1114144376311001168/Nishant_Iyer.png
 plum: false
 ---
-# Portena: Revolutionizing Remote Computing
+# **Unified Threat Management**
 
-Working as a volunteer for Cardano, I had to work on HPC (High-Performance Computing) markets, analyze them and develop custom marketplace images to share with the community. Whilst monitoring an HPC instance in Singapore, a thought ignited my curiosity: How much computing power is truly required to establish a remote connection to a desktop instance? To my astonishment, the RDP (Remote Desktop Protocol) task consumed a mere 10MB of RAM. This revelation piqued my interest as industry giants like VMware and Citrix presented DaaS (Desktop as a Service) and remote desktop solutions as alternatives, yet they necessitated a fully-fledged $500 computer. It struck me then: Why not create a diminutive microcontroller capable of serving as a client for a remote instance? And thus, the concept of Portena was born.
+Xtensa Unified Threat Management is a comprehensive security system that integrates multiple security functions to a single, portable device. It is designed for the esprieff range of boards and can be versatile across all platforms. The UTM system utilizes an esp32 as for now with  advanced technologies to detect and alert potential security threats, vulnerabilities and intrusions to the user. This can be a very handy tool for everyday users. 
+This is a very cost effective way of protecting your privacy and security.
 
-Our computational needs are often discrete, fluctuating between full capacity and merely a fraction thereof. Consider the scenario of an office employee utilizing a computer armed with 8GB of RAM and a quad-core processor; their computational requirements oscillate like a variable "x." At times, "x" may hover around 40%, while on other occasions, it might dwindle to a mere 10%. Regrettably, the surplus computing resource remains idle, going to waste.
+Features:
 
-Portena is meticulously designed to bridge this gap by connecting a small Single Board Computer (SBC) to a cloud server, mirroring its activities seamlessly on a desktop screen via an HDMI cable. Furthermore, Portena incorporates all the essential peripherals to empower users with effortless control over their Hybrid PCs. To establish the remote connection, I have developed a specially tailored protocol called uNet. Constructed upon TCPv8, uNet harnesses cutting-edge algorithms, ensuring high transmission rates with minimal latency. This protocol operates even in regions with limited internet connectivity, guaranteeing accessibility for users across the globe. Currently, I a, fully immersed in the prototyping phase, using the popular ESP32 microcontroller to develop a client-side solution while simultaneously working on the server-side implementation.
 
-Portena's remote connection is facilitated through CoaaS (Compute-as-a-Service) infrastructures dispersed globally. These serverless models offer scalable "balloon-like" functions/containers that can be dynamically expanded or contracted to meet demand. Moreover, I have devised a distinctive plugin for each Portena instance, aptly named DRATP (Dynamic Resource Allocation and Task Prioritization). DRATP leverages AI/ML algorithms to optimize resource allocation and pricing, leading to cost reductions of up to 80%, as substantiated by my comprehensive tests.
+- [x]  Wi-Fi network scanning: The UTM can scan nearby Wi-Fi networks and analyze them for potential security risks such as weak passwords, open networks, and outdated security protocols.
+- [x] Intrusion detection system: The project includes an intrusion detection system that can detect malicious packets and alert the user in real-time. The system can also block incoming traffic from suspicious sources .In addition to logging intrusion attempts and network events, you could set up the system to send real-time alerts to your phone or email when a potential threat is detected.
+- [x] User-defined network whitelisting: The user can define a list of trusted networks and devices to whitelist, reducing false positives from the intrusion detection system.
+- [x] Real-time monitoring and alerts: The UTM can provide real-time monitoring of network traffic and update the results on a web interface.
+- [x] User-friendly web interface: The project includes a user-friendly web interface that displays the results of the network scan and intrusion detection system in real-time. The interface can be accessed through a web browser on any device connected to the same network as the UTM.
+- [x] Integration with threat intelligence feeds
+- [x] Rogue access point detection:
+- [x] Network mapping: The UTM system can map out the topology of a network and report on any potential vulnerabilities. For example, the system can scan for open ports and services, and report on any that may be vulnerable to attack.
+- [x] Router Extension
+Hardware:
 
-![Portena Image](https://media.discordapp.net/attachments/971299427715272734/1117070920721371289/sirg.png?width=395&height=491)
+- ESP32 microcontroller
+- Breadboard
+- LED or buzzer for alerting
+- Enclosure box
 
-Portena is still in its nascent ideation stages, and I have been ardently engrossed in prototyping, rigorous testing, and extensive research. For further insights into the remarkable technologies it embodies, please look at the blog section on our website.
+Software:
 
-If you are interested and eager to learn more about Portena or wish to get in touch, kindly reach out to me at [nishant.iyer62@gmail.com](mailto:nishant.iyer62@gmail.com). I would be delighted to engage in a profound discussion about this visionary project.
+- Arduino IDE for programming the ESP32
+- Wi-Fi and network scanning libraries
+- Intrusion detection and blocking libraries
+- Web server and interface libraries
+
+Working Principle:
+
+For prototyping purposes, i am using the hostpot of Mobile A to provide network to esp32 and a tablet.
+This will create a shared local network. The esp32 will act as a gateway between the Mobile A and tablet. 
+the mobile act as a bad actor and send all types of malicious packets to the tab and the esp32 UTM in the middle will filter them out and send it to the tab and prevents the tab from accessing the malicious packets which can hack the person. As using hostpot for 2 devices can be slow, i will pretend to add more 2 mobiles and pre configure them in the program, so when the network scan is requsted it will show these devices too but in reality they are not connected. They will have fake vul. ports and endpoints which will be detected and displayed in the website. The esp32 will also scan nearby Wi-Fi networks and analyze them for potential security risks such as weak passwords, open networks, and outdated security protocols. Display the results of the scan in the web interface. WHen a potential security threat is detected then the led connected to the esp32 turns on. All of this happens in real time.it sends email or text message alerts to the user when an intrusion is detected or when a security risk is identified during a network scan. Real time traffic analysis uses a packet analyzer to perform real time analysis if network traffic and identify potential security threats.
+All of this is interelated to reduce the compute needed.
+All the data that must be visualized in the website is sent over a API and the website displays it.
+
+Website - 
+
+- Dashboard - main page , network status, real time traffic analyses
+- Devices page - All devices in the network , its details and whitelisted ones
+- WiFi scan page - Displays results of all the most recent network scan, including a list of nearby wifi networks and any potential risks associated with it.
+- IDS Alerts page - displays all alerts generate by IDS
+- Network Topology page - provides a visual representation of the network topology, showing how devices are connected to each other and displaying any potential vulnerabilities in the network.
+- Reports page - A detailed page with reports, charts and maps to display potential vulnerabilities in networks they have been in at that time. The map is  heatmap of the area he/she is in or was in.
+- Alerts - visual alerts, notifications, sends alert to email. sms and animated icons.
+
+Conclusion:  
+The ESP32 Intrusion Detection and Network Safety Monitor with Web Interface is a highly programming-oriented yet simple project that can be made using AI, packages, and open-source software. It addresses the growing concern for network security and provides a cost-effective and customizable solution for network security monitoring. With real-time updates and a user-friendly web interface, the project can be a useful tool for individuals and small organizations looking to monitor their network security.
+
+api/
+|-- src/
+|   |-- controllers/
+|   |   |-- scanResultsController.js
+|   |
+|   |-- models/
+|   |   |-- ScanResult.js
+|   |
+|   |-- routes/
+|   |   |-- scanResults.js
+|   |
+|   |-- services/
+|   |   |-- scanResultService.js
+|   |
+|   |-- utils/
+|   |   |-- logger.js
+|   |
+|   |-- app.js
+|   |-- config/
+|   |   |-- db.js
+|   |
+|   |-- tests/
+|   |   |-- (test files)
+|   |
+|   |-- .env
+|   |-- .gitignore
+|   |-- package.json
+|   |-- README.md
+|
+|-- (other files and directories)
+
+
+Here's the updated file structure for the API to receive data from the ESP32:
+
+1. `src/` (Source directory):
+    
+    - This directory contains all the source code for the API.
+2. `controllers/`:
+    
+    - `scanResultsController.js`: This file contains the controller functions that handle incoming HTTP requests related to scan results from the ESP32. It interacts with the service layer to process the data and sends the appropriate HTTP responses back to the client.
+3. `models/`:
+    
+    - `ScanResult.js`: This file defines the Mongoose schema for the ScanResult model. It specifies the structure of the data that will be stored in the MongoDB database for each scan result received from the ESP32.
+4. `routes/`:
+    
+    - `scanResults.js`: This file defines the API routes related to scan results from the ESP32. It maps incoming HTTP requests to the corresponding controller functions in `scanResultsController.js`.
+5. `middlewares/`:
+    
+    - `authMiddleware.js`: This file contains the custom middleware function(s) that can be used to check the authentication and authorization of incoming requests before they are processed by the controller functions. You might not need authentication for the ESP32 data, so this is optional.
+6. `services/`:
+    
+    - `scanResultService.js`: This file contains the business logic for handling scan results from the ESP32. It interacts with the database through the model and performs operations like creating and reading scan results.
+7. `utils/`:
+    
+    - `logger.js`: This file contains a utility function to handle logging in the application. It can be used to log important events and errors.
+8. `app.js`:
+    
+    - This file is the entry point of the application. It sets up the Express app, registers middleware functions, and defines the routes. It also connects to the MongoDB database using the configuration from `config/db.js`.
+9. `config/`:
+    
+    - `db.js`: This file contains the configuration for connecting to the MongoDB database using Mongoose. It specifies the connection URI and other database settings.
+10. `tests/`:
+    
+    - This directory contains test files to test the functionality of the application. The tests are organized based on controllers, services, and utils.
+11. `.env` (Optional):
+    
+    - This file is used to store environment variables for the application. For example, you can store the MongoDB connection URI and other sensitive information in this file.
+12. `.gitignore`:
+    
+    - This file specifies which files and directories should be ignored by Git version control.
+13. `package.json`:
+    
+    - This file contains metadata about the project and the list of dependencies needed for the application to run. You can install these dependencies using `npm install` or `yarn install`.
+14. `README.md`:
+    
+    - This is a markdown file that contains documentation for your API. You can describe the API endpoints, how to use them, and any other relevant information.
+
+Now, how these files fit together to handle data from the ESP32:
+
+- When the ESP32 sends scan result data to the API, it will make a POST request to the `/api/scan-results` endpoint defined in `routes/scanResults.js`.
+- The `/api/scan-results` route in `routes/scanResults.js` will map the incoming POST request to the `createScanResult` controller function in `controllers/scanResultsController.js`.
+- The `createScanResult` controller function will use the `scanResultService.js` in `services/` to handle the received data. It will create a new scan result document in the MongoDB database using the Mongoose model defined in `models/ScanResult.js`.
+- The `scanResultService.js` will interact with the database to store the scan result data.
+- If you want to provide authentication for this endpoint, you can add the `authMiddleware.js` to the route to check the validity of the request.
