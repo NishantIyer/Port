@@ -9,7 +9,7 @@
         </router-link>
       </div>
       <div class="center">
-        <router-link to="/net" title="Blog" class="nav-link">
+        <router-link to="/netlife" title="Blog" class="nav-link">
           <span class="nav-text">Netowrk Toplogy</span>
         </router-link>
         <router-link to="/about" title="about" class="nav-link">
