@@ -1,24 +1,13 @@
 ---
 title: 
-description: Portena
+description: UTM
 image: https://cdn.discordapp.com/attachments/971299427715272734/1114144376311001168/Nishant_Iyer.png
 plum: true
 ---
 
-# Portena: Revolutionizing Computing
+# UTM: Unified Threat Management
 
-Portena is an aspiring to be startup which has the potential to change the way we think about computers.
+A pocket-friendly security assistant at your service.
 
-Read - [About](https://portena.netlify.app/about) to learn more.
-
-Go to - [Blog](https://portena.netlify.app/posts) to see the latest updates
-
-Founder - [NishantIyer](https://nishantiyer.netlify.app)
-
-Featured
-
-- [DRATP](https://portena.netlify.app/posts/dratp) (Dynamic Resource Allocation and Task Prioritization)
-- [Miracle](https://portena.netlify.app/posts/help)
-- [Prototyping](https://portena.netlify.app/posts/prototyping)
-- [Testbed](https://portena.netlify.app/posts/testing%20pvpc)
-
+By Grade XD, Ruby Group
+Nishant, Unnathi, Sara, Nikhil, Divya, Chaitanya
